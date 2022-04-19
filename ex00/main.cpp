@@ -19,6 +19,9 @@ int main()
 	delete i;
 
 	const WrongCat *cat = new WrongCat();
-	cat->WrongAnimal::makeSound();
+	cat->makeSound();
+
+	const WrongAnimal *cat2 = new WrongCat();
+	cat2->makeSound();
 	delete cat;
 }
