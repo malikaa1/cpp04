@@ -5,10 +5,7 @@ Brain::Brain(void){
 }
 
 Brain::~Brain(void){
-	std::cout << "Brain desstructor called" << std::endl;
-}
-void Brain::makeSound(void) const{
-	std::cout<< "miaaaaow ^^ !!"<<std::endl;
+	std::cout << "Brain destructor called" << std::endl;
 }
 
 Brain::Brain( Brain const & src ){

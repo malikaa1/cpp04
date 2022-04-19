@@ -5,7 +5,7 @@ WrongCat::WrongCat(void){
 	this->type = "Wrongcat";
 }
 WrongCat::~WrongCat(void){
-	std::cout << "WrongCat desstructor called" << std::endl;
+	std::cout << "WrongCat destructor called" << std::endl;
 }
 void WrongCat::makeSound(void) const{
 	std::cout<< "miaw......"<<std::endl;

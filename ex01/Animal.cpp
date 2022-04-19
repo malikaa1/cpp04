@@ -17,23 +17,23 @@ const std::string &Animal::getType(void) const{
 }
 
 void Animal::makeSound(void) const{
-        std::cout<< "animaaaaaal !!"<<std::endl;
+        std::cout<< "huuum (animal) !!"<<std::endl;
 }
 
-Animal &Animal::operator=(Animal const & anim){
+Animal &Animal::operator=(Animal const &a){
 	std::cout << "Animal Assignement operator called" << std::endl;
-	this->type = anim.getType();
+	this->type = a.getType();
 	return *this;
 }
 
-std::ostream	&operator<<(std::ostream &os, const Animal &inst ){
-	os << inst.getType();;
+std::ostream	&operator<<(std::ostream &os, const Animal &a ){
+	os << a.getType();;
 	return os;
 }
 
-Animal::Animal(Animal const & src)
+Animal::Animal(Animal const &a)
 {
 	std::cout << "Animal Copy constructor called" << std::endl;
-	*this = src;
+	*this = a;
 	return;
 }

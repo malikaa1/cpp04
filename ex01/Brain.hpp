@@ -4,14 +4,12 @@
 #include <iostream>
 
 class Brain{
-private:
-	static const int IdeaNum = 100;
 public:
 	Brain(void);
 	Brain(const Brain &src);
 	virtual ~Brain(void);
-	virtual void makeSound(void) const;
+	//virtual void makeSound(void) const;
 	Brain &operator=(Brain const & brain);
-	std::string ideas[IdeaNum];
+	std::string ideas[100];
 };
 #endif

@@ -20,14 +20,14 @@ void Animal::makeSound(void) const{
         std::cout<< "hmmmmm (animal) !!"<<std::endl;
 }
 
-Animal &Animal::operator=(Animal const & anim){
+Animal &Animal::operator=(Animal const & a){
 	std::cout << "Animal Assignement operator called" << std::endl;
-	this->type = anim.getType();
+	this->type = a.getType();
 	return *this;
 }
 
-std::ostream	&operator<<(std::ostream &os, const Animal &inst ){
-	os << inst.getType();;
+std::ostream	&operator<<(std::ostream &os, const Animal &a ){
+	os << a.getType();;
 	return os;
 }
 
