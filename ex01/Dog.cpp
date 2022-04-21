@@ -9,8 +9,8 @@ Dog::Dog(void){
 }
 
 Dog::~Dog(void){
-	delete this->brain;
 	std::cout << "Dog desstructor called" << std::endl;
+	delete this->brain;
 }
 
 void Dog::makeSound(void) const {
@@ -20,7 +20,14 @@ void Dog::makeSound(void) const {
 Dog::Dog( Dog const & src ) :Animal(src)
 {
 	std::cout << "dog Copy constructor called" << std::endl;
-	*this = src;
+	this->type = src.type;
+	Brain* b = new Brain;
+	for (int i = 0; i < 100; i++)
+	{
+		b->ideas[i] = src.brain->ideas[i];
+	}
+	
+	this->brain = b;
 	return;
 }
 

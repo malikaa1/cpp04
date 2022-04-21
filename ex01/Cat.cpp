@@ -17,7 +17,13 @@ void Cat::makeSound(void) const{
 
 Cat::Cat( Cat const & src ): Animal(src){
 	std::cout << "Cat Copy constructor called" << std::endl;
-	*this = src;
+	this->type = src.getType();
+	Brain* b = new Brain;
+	for (int i = 0; i < 100; i++)
+	{
+		b->ideas[i] = src.brain->ideas[i];
+	}
+	this->brain = b;
 	return;
 }
 

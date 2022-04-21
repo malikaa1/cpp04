@@ -20,4 +20,15 @@ int main(){
 		delete animl[i];
 	}
 
+
+	Dog d;
+	{
+	Dog tmp = d;
+	}
+
+
+	Cat s;
+	{
+	Cat tmp = s;
+	}
 }
