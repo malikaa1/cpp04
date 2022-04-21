@@ -24,4 +24,5 @@ int main()
 	const WrongAnimal *cat2 = new WrongCat();
 	cat2->makeSound();
 	delete cat;
+	delete cat2;
 }
