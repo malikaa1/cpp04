@@ -16,6 +16,8 @@ int main()
 			animl[i] = new Dog();
 		std::cout << "TAB[" << i << "] = " << animl[i]->getType() << std::endl;
 	}
+	animl[0]->makeSound();
+	animl[6]->makeSound();
 	for (i = 0; i < 10; i++)
 	{
 		std::cout << "TAB[" << i << "]";
@@ -42,5 +44,7 @@ int main()
 	std::cout << cat2.getBrain()->ideas[0] << std::endl;
 	std::cout << cat2.getBrain()->ideas[1] << std::endl;
 	std::cout << cat2.getBrain()->ideas[2] << std::endl;
+
+
 	// Animal a;
 }

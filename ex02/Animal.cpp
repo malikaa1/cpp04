@@ -16,10 +16,6 @@ const std::string &Animal::getType(void) const{
     return (this->type);
 }
 
-void Animal::makeSound(void) const{
-        std::cout<< "huuum (animal) !!"<<std::endl;
-}
-
 Animal &Animal::operator=(Animal const &a){
 	std::cout << "Animal Assignement operator called" << std::endl;
 	this->type = a.getType();

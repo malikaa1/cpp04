@@ -8,7 +8,6 @@ public:
 	Brain(void);
 	Brain(const Brain &src);
 	virtual ~Brain(void);
-	//virtual void makeSound(void) const;
 	Brain &operator=(Brain const & brain);
 	std::string ideas[100];
 };

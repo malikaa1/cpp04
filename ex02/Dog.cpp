@@ -9,8 +9,8 @@ Dog::Dog(void){
 }
 
 Dog::~Dog(void){
-	delete this->brain;
 	std::cout << "Dog desstructor called" << std::endl;
+	delete this->brain;
 }
 
 void Dog::makeSound(void) const {
@@ -20,23 +20,21 @@ void Dog::makeSound(void) const {
 Dog::Dog( Dog const & src ) :Animal(src)
 {
 	std::cout << "dog Copy constructor called" << std::endl;
-	*this = src;
+	this->type = src.getType();
+	Brain* b = new Brain(*src.brain);
+	this->brain = b;
 	return;
 }
 
 Dog &Dog::operator=(Dog const & dog){
 	std::cout << "Dog  Assignement operator called" << std::endl;
 	this->type = dog.getType();
-	*(this->brain) = *(dog.getBrain());
+	Brain* b = new Brain(*dog.brain);
+	this->brain = b;
 	return *this;
 }
 
-Animal &Dog::operator=(Animal const & dog){
-	std::cout << "animal dog Assignement operator called " << std::endl;
-	this->type = dog.getType();
-	*(this->brain) = *(dog.getBrain());
-	return *this;
-}
 Brain *Dog::getBrain() const {
 	return (this->brain);
 }
+

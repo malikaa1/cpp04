@@ -15,7 +15,6 @@ public:
     const std::string &getType(void) const;
     virtual void makeSound(void) const = 0;
 	virtual Animal &operator=(Animal const & anim);
-	virtual Brain		*getBrain( void ) const = 0;
 };
 std::ostream	&operator<<(std::ostream &os, const Animal &inst);
 
