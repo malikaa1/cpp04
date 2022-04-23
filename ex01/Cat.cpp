@@ -35,11 +35,4 @@ Brain *Cat::getBrain() const {
 	return (this->brain);
 }
 
-// Animal &Cat::operator=(Animal const & cat){
-// 	std::cout << "animal cat  Assignement operator called" << std::endl;
-// 	this->type = cat.getType();
-// 	*(this->brain) = *(cat.getBrain());
-// 	return *this;
-// }
-
 

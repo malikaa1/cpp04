@@ -16,8 +16,6 @@ int main()
 			animl[i] = new Dog();
 		std::cout << "TAB[" << i << "] = " << animl[i]->getType() << std::endl;
 	}
-	animl[0]->makeSound();
-	animl[6]->makeSound();
 	for (i = 0; i < 10; i++)
 	{
 		std::cout << "TAB[" << i << "]";

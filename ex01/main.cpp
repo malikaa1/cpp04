@@ -43,8 +43,7 @@ int main()
 	std::cout << cat2.getBrain()->ideas[0] << std::endl;
 	std::cout << cat2.getBrain()->ideas[1] << std::endl;
 	std::cout << cat2.getBrain()->ideas[2] << std::endl;
-
-	std::cout << "---------------test destructor---------------"<< std::endl; 
+ 
 		Dog d;
 		{
 		Dog tmp = d;
